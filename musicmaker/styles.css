@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: azure;
+}
+
+#main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: pink;
+    color: white;
+}
+
+#instrument-category {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: 20px;
+    /*display: flex;
+    flex-direction: row;*/
+}
+
+#instrument-category h2 {
+    color: black;
+}
+
+.categories {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.instrument-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instruments {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ddd;
+    cursor: grab;
+    border: 5px solid lightgray;
+   
+}
+
+.instruments:hover {
+    background-color: lightskyblue;
+}
+
+#track-div {
+    width: 100%;
+   
+}
+
+#track-list {
+    border: 1px solid #ccc;
+    background-color: white;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+
+.track {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-instruments {
+    display: flex;
+    gap: 10px; /* Space between instruments */
+    background-color: pink;
+    border: 2px solid black;
+    padding: 5px; 
+}
+
+.instrument {
+    background-color: #f0f0f0; /* Background color for each instrument */
+    padding: 10px; /* Padding for instruments */
+    margin: 5px; /* Space between instruments */
+    border: 2px solid black; /* Border around each instrument */
+    border-radius: 5px; /* Optional: Rounded corners */
+    flex: 1; /* Make each instrument flexible within the track */
+    cursor: grab; /* Change cursor style to indicate drag */
+    flex: 0 0 auto; /* Prevents shrinking and growing */
+    height: 30px;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;  /* Adds space below the h1 */
+}
+
+

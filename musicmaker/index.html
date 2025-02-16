@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Maker</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1>Music Maker</h1>
+            <h2>Bring your creation to life!</h2>
+        </header>
+
+        <div id="instrument-category">
+            <h2>Instrument Choice</h2>
+            
+            <div class="instrument-categories">
+            <!--This is the div for drums-->
+                <div class="categories" id="categories-drums">
+                    <h3>Drums</h3>
+                    <div class="instruments" draggable="true" data-instrument="drum1">Drum1</div>
+                    <div class="instruments" draggable="true" data-instrument="drum2">Drum2</div>
+                    <div class="instruments" draggable="true" data-instrument="drum3">Drum3</div>
+                </div>
+
+            <!--This is the div for basses-->
+                <div class="categories" id="categories-basses">
+                    <h3>Bases</h3>
+                    <div class="instruments" draggable="true" data-instrument="bass1">Bass1</div>
+                    <div class="instruments" draggable="true" data-instrument="bass2">Bass2</div>
+                    <div class="instruments" draggable="true" data-instrument="bass3">Bass3</div>
+                </div>
+
+            <!--This is the div for guitars-->
+                <div class="categories" id="categories-guitars">
+                    <h3>Guitars</h3>
+                    <div class="instruments" draggable="true" data-instrument="guitar1">Guitar1</div>
+                    <div class="instruments" draggable="true" data-instrument="guitar2">Guitar2</div>
+                    <div class="instruments" draggable="true" data-instrument="guitar3">Guitar3</div>
+                </div>
+
+            <!--This is the div for synths-->
+                <div class="categories" id="categories-synths">
+                    <h3>Synths</h3>
+                    <div class="instruments" draggable="true" data-instrument="synth1">Synth1</div>
+                    <div class="instruments" draggable="true" data-instrument="synth2">Synth2</div>
+                    <div class="instruments" draggable="true" data-instrument="synth3">Synth3</div>
+                </div>
+            </div>
+
+            <div id="track-div">
+                <h2>Tracks</h2>
+                <button id="add-track-button">Add Track</button>
+            
+                <div id="track-list"></div>
+            
+            </div>
+
+            <div id="controls">
+                <button id="play-button">Play</button>
+                <button id="stop-button">Stop</button>
+                <button id="download-button">Download Song</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
